@@ -7,13 +7,13 @@
   "database": "bbox",
   "synchronize": false,
   "logging": false,
-  "entities": ["src/entity/**/*.ts"],
-  "migrations": ["src/migration/**/*.ts"],
-  "subscribers": ["src/subscriber/**/*.ts"],
+  "entities": ["src/domains/*/entities/*.ts"],
+  "migrations": ["src/infra/migrations/**/*.ts"],
+  "subscribers": ["src/infra/subscribers/**/*.ts"],
   "migrationsTableName": "migrations_tbl",
   "cli": {
-    "entitiesDir": "src/entity",
-    "migrationsDir": "src/migration",
-    "subscribersDir": "src/subscriber"
+    "entitiesDir": "src/domains/*/entities",
+    "migrationsDir": "src/infra/migrations",
+    "subscribersDir": "src/infra/subscribers"
   }
 }

@@ -6,7 +6,7 @@ import {
   ManyToOne,
   PrimaryColumn,
 } from "typeorm";
-import User from "./User";
+import User from "../../users/entities/User";
 
 @Entity("projects")
 export default class Project extends BaseEntity {
